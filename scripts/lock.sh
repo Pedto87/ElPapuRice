@@ -1,0 +1,21 @@
+#!/bin/bash
+swaylock \
+    --screenshots \
+    --clock \
+    --indicator \
+    --indicator-radius 100 \
+    --indicator-thickness 8 \
+    --effect-blur 8x6 \
+    --effect-vignette 0.6:0.6 \
+    --ring-color #89B4FA \
+    --key-hl-color #F38BA8 \
+    --line-color 00000000 \
+    --inside-color #1E1E2E99 \
+    --separator-color 00000000 \
+    --text-color #CDD6F4 \
+    --text-ver-color #CDD6F4 \
+    --text-wrong-color #F38BA8 \
+    --grace 3 \
+    --fade-in 0.3 \
+    --font "JetBrains Mono" \
+    --font-size 18

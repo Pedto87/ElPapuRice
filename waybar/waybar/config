@@ -1,0 +1,154 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 6,
+  "margin-top": 8,
+  "margin-bottom": 0,
+  "margin-left": 80,
+  "margin-right": 80,
+
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  
+  "modules-center": [
+    "clock"
+  ],
+  
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "battery",
+    "tray"
+  ],
+
+  "hyprland/workspaces": {
+  "all-outputs": true,
+  "format": "{name} {icon}",
+  "format-icons": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "urgent": "",
+    "focused": "",
+    "default": ""
+  }
+  },
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    },
+
+  "hyprland/mode": {
+    "format": " {}"
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50
+  },
+
+  "custom/launcher": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "wofi --show drun",
+    "on-click-right": "swaymsg exit"
+  },
+
+  "custom/calendar": {
+    "exec": "~/.config/scripts/cal_waybar.sh",
+    "interval": 3600,
+    "format": "{}",
+    "tooltip": true
+  },
+
+  "clock": {
+    "format": "{:%A %d %B  %H:%M:%S}",
+    "interval": 1,
+    "tooltip": true,
+    "locale": "es_AR.UTF-8"
+  },
+
+  "custom/weather": {
+    "exec": "curl -s 'https://wttr.in/?format=%C+%t'",
+    "interval": 3600,
+    "format": "󰖐 {}",
+    "tooltip": true
+  },
+
+  "network": {
+    "format-wifi": " {bandwidthDownBits}",
+    "format-ethernet": " {bandwidthDownBits}",
+    "format-disconnected": "睊 Offline",
+    "interval": 3,
+    "tooltip": "Interfaz: {ifname}\nIP: {ipaddr}\nVelocidad: {bandwidthDownBits}",
+    "on-click": "nm-connection-editor"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": ["", "", ""],
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": ""
+    },
+    "format-muted": " Muted",
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "smooth-scrolling-threshold": 0.1,
+    "tooltip": true,
+    "tooltip-format": "{desc} ({volume}%)"
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 5,
+    "tooltip": "CPU: {usage}%"
+  },
+
+  "memory": {
+    "format": " {percentage}%",
+    "interval": 5,
+    "tooltip": "RAM: {used} MiB / {total} MiB ({percentage}%)"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": {
+      "default": ["", "", "", "", ""],
+      "charging": ["", "", "", "", ""],
+      "plugged": [""]
+    },
+    "interval": 10,
+    "tooltip": "Batería: {capacity}%\nEstado: {status}\nTiempo: {time}"
+  },
+
+  "tray": {
+    "spacing": 8,
+    "icon-size": 16
+  }
+}

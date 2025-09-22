@@ -1,0 +1,123 @@
+/* === Waybar: Wofi Pastel Style === */
+* {
+    font-family: "JetBrains Mono", "Monospace";
+    font-size: 13px;
+}
+
+/* === Waybar: Personalizado con influencia Lavarch === */
+* {
+    font-family: "JetBrains Mono", "Monospace";
+    font-size: 13px;
+}
+
+window#waybar {
+    background: linear-gradient(160deg, rgba(30, 30, 46, 0.85) 0%, rgba(30, 30, 46, 0.7) 100%);
+    color: #cdd6f4;
+    border: 1px solid #89b4fa;
+    box-shadow: 0 0 8px rgba(137, 180, 250, 0.2);
+    margin-top: 8px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#workspaces, #mode, #window, #custom-calendar, #clock, #network, #pulseaudio, #cpu, #memory, #battery, #tray, #custom-launcher {
+    background: rgba(35, 36, 58, 0.75);
+    padding: 4px 12px;
+    margin: 4px 2px;
+    color: #cdd6f4;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover,
+#mode:hover, #window:hover, #custom-calendar:hover, 
+#clock:hover, #network:hover, #pulseaudio:hover, 
+#cpu:hover, #memory:hover, #battery:hover, #custom-launcher:hover {
+    background: rgba(137, 180, 250, 0.15);
+    box-shadow: 0 0 4px rgba(137, 180, 250, 0.4);
+    border-radius: 6px;
+}
+/* Mantenemos tus estilos específicos pero mejoramos la integración */
+#workspaces button {
+    color: #89b4fa;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: #1e1e2e;
+    background: #89b4fa;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+    background: #f9e2af;
+}
+
+#workspaces button:hover {
+    background: #a6adc8;
+    color: #1e1e2e;
+}
+
+#mode {
+    background: #b4befe;
+    color: #1e1e2e;
+}
+
+#window {
+    color: #89b4fa;
+}
+
+#clock, #custom-calendar {
+    background: #b4befe;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+/* Módulos de la derecha con sus colores específicos */
+
+#custom-weather {
+    color: #89b4fa;
+}
+
+#network {
+    color: #89b4fa;
+}
+
+#pulseaudio {
+    color: #89b4fa;
+}
+
+#cpu {
+    color: #89b4fa;
+}
+
+#memory {
+    color: #89b4fa;
+}
+
+#battery {
+    color: #89b4fa;
+}
+
+#battery.charging, #battery.plugged {
+    color: #89b4fa;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #1e1e2e;
+        background-color: #f38ba8;
+    }
+}

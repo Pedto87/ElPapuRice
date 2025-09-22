@@ -1,0 +1,20 @@
+:root {
+    /* Colores de alto contraste */
+    --text-primary: #e8e8e8;
+    --text-secondary: #a5adcb;
+    --bg-primary: rgba(25, 23, 36, 0.9);
+    --bg-secondary: rgba(255, 255, 255, 0.12);
+    
+    /* Colores acénticos */
+    --accent-blue: #89b4fa;
+    --accent-cyan: #74c7ec;
+    --accent-green: #a6e3a1;
+    --accent-yellow: #f9e2af;
+    --accent-red: #f38ba8;
+    --accent-purple: #cba6f7;
+    
+    /* Tamaños de fuente */
+    --font-size-normal: 14px;
+    --font-size-large: 16px;
+    --font-size-icon: 20px;
+}

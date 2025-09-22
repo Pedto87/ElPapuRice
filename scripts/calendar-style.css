@@ -1,0 +1,23 @@
+window {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+#input {
+    min-height: 0;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 0px;   /* Oculta el input */
+    border: none;
+}
+
+list {
+    margin-top: 0;
+}
+
+#entry {
+    font-size: 13px;
+    padding: 2px;
+    min-height: 0;
+}
