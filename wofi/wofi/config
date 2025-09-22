@@ -1,0 +1,12 @@
+width = 600
+height = 400
+prompt = Buscar...
+show = drun
+lines = 10
+columns = 1
+location = center
+allow_markup = true
+no_actions = true
+always_parse_args = true
+ignore_case = true
+hide_scroll = true

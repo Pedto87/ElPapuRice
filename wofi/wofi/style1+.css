@@ -1,0 +1,57 @@
+/* Configuración general de la ventana */
+window {
+    margin: 0px;
+    border: 3px solid #1E1E2E;
+    border-radius: 15px;
+    background-color: #1E1E2E;
+    font-family: "FiraCode Nerd Font", "JetBrains Mono", sans-serif;
+    font-size: 14px;
+}
+
+/* Área de entrada */
+#input {
+    margin: 10px;
+    border: 2px solid #89B4FA;
+    border-radius: 10px;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+}
+
+/* Diseño interno */
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: #1E1E2E;
+}
+
+/* Diseño exterior */
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: #1E1E2E;
+}
+
+/* Área de desplazamiento */
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+/* Texto */
+#text {
+    margin: 5px;
+    border: none;
+    color: #CDD6F4;
+}
+
+/* Entradas seleccionadas */
+#entry:selected {
+    background-color: #89B4FA;
+    border-radius: 10px;
+}
+
+/* Texto en entradas seleccionadas */
+#entry:selected #text {
+    color: #1E1E2E;
+    font-weight: bold;
+}

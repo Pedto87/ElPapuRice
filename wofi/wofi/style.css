@@ -1,0 +1,61 @@
+/* ~/.config/wofi/style.css */
+window {
+    margin: 0px;
+    border: 2px solid #89B4FA;
+    border-radius: 0px;
+    background-color: #1E1E2E;
+    font-family: "FiraCode Nerd Font", "JetBrains Mono", sans-serif;
+    font-size: 14px;
+}
+
+#input {
+    margin: 12px;
+    padding: 8px;
+    border: 1px solid #89B4FA;
+    border-radius: 0px;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+    font-size: 15px;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: #1E1E2E;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: #1E1E2E;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #CDD6F4;
+    padding: 4px;
+}
+
+#entry {
+    margin: 2px 8px;
+    border: none;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: #89B4FA;
+    border-radius: 0px;
+    margin: 2px 8px;
+    outline: none;
+}
+
+#entry:selected #text {
+    color: #1E1E2E;
+    font-weight: bold;
+}
